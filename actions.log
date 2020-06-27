@@ -1,0 +1,25 @@
+2020-06-11 13:03:54,029 - Get available client number from client_address.txt
+2020-06-11 13:03:54,030 - Found available ip-address at ['client-1', '10.10.1.6\n']
+2020-06-11 13:03:54,030 - Starting copying certificate...
+2020-06-11 13:03:54,030 - scp command execution
+2020-06-11 13:03:55,481 -
+
+client-1.zip                                    0%    0     0.0KB/s   --:-- ETA
+client-1.zip                                  100% 8641   202.1KB/s   00:00
+
+2020-06-11 13:03:55,481 - Finished command execution
+2020-06-11 13:03:55,582 - Starting unzip...
+2020-06-11 13:03:56,014 - caution:  not extracting; -d ignored
+Archive:  /home/niyara/test/client-1.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+     1866  2020-02-13 13:04   ca.crt
+     3272  2020-02-13 13:04   client-1.key
+     7162  2020-02-13 13:04   client-1.crt
+      408  2020-02-13 13:04   client-1.ovpn
+---------                     -------
+    12708                     4 files
+
+2020-06-11 13:03:56,014 - Unzip finished
+2020-06-11 13:03:56,014 - Editing configurations in start_vpn file...
+2020-06-11 13:03:56,014 - Found 2 matching substring(s) and replaced with "client-1"
